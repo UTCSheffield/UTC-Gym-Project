@@ -6,5 +6,5 @@ class SessionExercise(db.Model):
     start = db.Column(db.DateTime, nullable=False)
     end = db.Column(db.DateTime, nullable=False)
     reps = db.Column(db.Integer, nullable=False)
-    value = db.Column(db.VALUEOFSOMETHING, nullable=False)
+    value = db.Column(db.Float, nullable=False)
     
