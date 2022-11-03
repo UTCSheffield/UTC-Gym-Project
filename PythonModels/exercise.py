@@ -7,3 +7,5 @@ class Exercise(db.Model):
     name = sa.Column(db.String, nullable=False)
     machine = sa.Column(db.String, nullable=False)
     measure = sa.Column(db.String, nullable=False)
+    muscle_groups = db.Column(db.String, nullable=False)
+    how_to_use = db.Column(db.String, nullable=False)
