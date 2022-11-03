@@ -1,6 +1,6 @@
 class Session(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    User = sa.Column(db.String, primary_key=True)
-    location = sa.Column(db.String, primary_key=True)
-    startDateTime = sa.Column(db.DateTime, primary_key=True)
-    endTime = sa.Column(db.DateTime, primary_key=True)
+    id = db.Column(db.Integer,nullable=False)
+    User = sa.Column(db.String, nullable=False)
+    location = sa.Column(db.String, nullable=False)
+    startDateTime = sa.Column(db.DateTime, nullable=False)
+    endTime = sa.Column(db.DateTime, nullable=False)
