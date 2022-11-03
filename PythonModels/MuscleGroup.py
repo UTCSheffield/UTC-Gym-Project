@@ -1,4 +1,4 @@
-class Exercise(db.Model):
+class MuscleGroup(db.Model):
     id = db.Column(db.Integer, nullable=False)
     
     machine_id = Column(Integer, ForeignKey("Machine_table.id"))
