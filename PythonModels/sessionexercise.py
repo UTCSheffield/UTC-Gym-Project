@@ -3,7 +3,8 @@ class SessionExercise(db.Model):
     #Session link?
     #Exercise link?
     #met lerel pex?
-    start = db.Column(db.DateTime, nullable)
-    end = db.Column(db.DateTime)
-    reps = db.Column(db.Integer)
+    start = db.Column(db.DateTime, nullable=False)
+    end = db.Column(db.DateTime, nullable=False)
+    reps = db.Column(db.Integer, nullable=False)
+    value = db.Column(db.VALUEOFSOMETHING, nullable=False)
     
