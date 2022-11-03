@@ -3,4 +3,4 @@ class User(db.Model):
     username = db.Column(db.String, unique=True, nullable=False)
     email = db.Column(db.String)
     measurements = relationship("Measurement")
-    
+    sessions = relationship("Session")
